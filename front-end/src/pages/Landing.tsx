@@ -18,7 +18,7 @@ function Landing() {
 
         <div className="location">
           <strong>Ilha de Santiago</strong>
-          <span>Praia</span>
+          <span>Cidade da Praia</span>
         </div>
 
         <Link to="/app" className="enter-app">
