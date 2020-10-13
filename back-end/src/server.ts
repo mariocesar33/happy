@@ -2,8 +2,11 @@ import express from 'express';
 
 const app = express();
 
-app.get('/users', (request, response) => {
-  return response.json({ messgem: "ola mundo"});
+app.use(express.json());
+
+
+app.post('/users', (request, response) => {
+  return response.json({ mensagem: "OI MUNDO"});
 });
 
 app.listen(3333, () => {
