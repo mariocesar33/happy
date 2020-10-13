@@ -5,7 +5,8 @@ import './database/connection';
 const app = express();
 app.use(express.json());
 
-app.post('/users', (request, response) => {
+app.post('/orphanages', (request, response) => {
+  console.log(request.body)
   return response.json({ mensagem: "OI MUNDO"});
 });
 
